@@ -172,6 +172,7 @@ sql/
 04_retention_cohorts.sql
 
 README.md
+executive_report_mercadolibre.pdf
 ```
 
 ---
@@ -231,7 +232,7 @@ F --> G[Purchase]
 
 El informe completo con el análisis detallado y las recomendaciones de negocio puede consultarse en el siguiente documento:
 
-📄 [Descargar informe ejecutivo](Proyecto 4_ Análisis de embudo y retención para MercadoLibre - Resumen ejecutivo - Informe Ejecutivo.pdf)
+📄 [Descargar informe ejecutivo](executive_report_mercadolibre.pdf)
 
 ---
 
