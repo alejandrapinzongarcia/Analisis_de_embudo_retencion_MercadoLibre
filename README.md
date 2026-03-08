@@ -227,6 +227,130 @@ D --> E[Add Shipping Info]
 E --> F[Add Payment Info]
 F --> G[Purchase]
 ```
+## 📑 Informe Ejecutivo
+
+El informe completo con el análisis detallado y las recomendaciones de negocio puede consultarse en el siguiente documento:
+
+📄 [Descargar informe ejecutivo](Proyecto 4_ Análisis de embudo y retención para MercadoLibre - Resumen ejecutivo - Informe Ejecutivo.pdf)
+
+---
+
+## 📊 Resumen Ejecutivo
+
+Este proyecto analiza el **embudo de conversión y la retención de usuarios** de una plataforma de e-commerce inspirada en MercadoLibre entre el **1 de enero y el 31 de agosto de 2025**.
+
+El objetivo del análisis fue identificar **en qué etapa del proceso de compra se pierden más usuarios** y evaluar **qué tan bien la plataforma logra retener a los usuarios a lo largo del tiempo**.
+
+---
+
+### Principales hallazgos del embudo de conversión
+
+La mayor caída de usuarios ocurre entre **la interacción con el producto y el agregado al carrito**.
+
+* **76.9%** de los usuarios interactúan con un producto.
+* Solo **11.0%** lo agregan al carrito.
+* Esto representa aproximadamente **un 86% de pérdida en esta etapa**.
+
+Este resultado indica que el principal problema del embudo **no está en el checkout**, sino en la conversión del **interés en intención de compra real**.
+
+#### Diferencias por país
+
+Se identificaron tres comportamientos principales:
+
+**Mercados con mayor conversión final**
+
+* México → **2.48%**
+* Uruguay → **4.55%**
+
+**Países con mayor fuga en la etapa select_item → add_to_cart**
+
+* Argentina → **1.25%**
+* Brasil → **0.68%**
+* Perú → **1.82%**
+
+**Países con quiebres críticos en checkout**
+
+* Paraguay
+* Ecuador
+* Colombia
+  (en estos países no se registran compras en el período analizado)
+
+---
+
+### Hallazgos de retención de usuarios
+
+Se analizó la retención de usuarios registrados entre **el 1 de enero y el 1 de junio de 2025**, evaluando su actividad en **D7, D14, D21 y D28**.
+
+Retención general:
+
+| Día | Retención |
+| --- | --------- |
+| D7  | ~86%      |
+| D14 | ~55%      |
+| D21 | ~25%      |
+| D28 | ~2–3%     |
+
+Los resultados muestran que la **activación inicial es alta**, pero la retención cae significativamente después de **D14**, lo que indica dificultades para mantener el engagement en el mediano plazo.
+
+#### Retención por país (D28)
+
+**Mayor retención**
+
+* Perú → **3.2%**
+* México → **3.1%**
+
+**Retención media**
+
+* Brasil
+* Uruguay
+* Bolivia
+* Ecuador (~2.5%)
+
+**Menor retención**
+
+* Argentina → **1.8%**
+* Chile → **1.7%**
+* Colombia → **1.6%**
+
+---
+
+### Recomendaciones de negocio
+
+A partir de los resultados del análisis se proponen las siguientes acciones:
+
+**Mejorar la conversión entre interacción con producto y carrito**
+
+* Optimizar la ficha de producto
+* Mostrar el precio final con mayor claridad
+* Anticipar costos de envío
+* Realizar pruebas A/B en los botones de acción (CTA)
+
+**Implementar estrategias diferenciadas por país**
+
+Mercados con mejor conversión:
+
+* Incrementar inversión en adquisición de usuarios
+  (México, Uruguay)
+
+Mercados con menor desempeño:
+
+* Campañas de reactivación temprana (D7–D14)
+* Incentivos después de la primera compra
+* Educación sobre beneficios del ecosistema (pagos, envíos, protección al comprador)
+
+---
+
+### Reflexión del análisis
+
+La etapa prioritaria para mejorar es **select_item → add_to_cart**, donde se pierde cerca del **86% de los usuarios que ya demostraron interés en un producto**.
+
+Desde una perspectiva de impacto, pequeñas mejoras en esta etapa podrían generar un **efecto multiplicador en todo el embudo**, aumentando el número de usuarios que llegan al checkout y finalmente completan una compra.
+
+El análisis también sugiere que los usuarios **exploran productos con frecuencia**, pero requieren **mayor claridad en precio, costos de envío y confianza en la plataforma** para completar la compra.
+
+Además, aunque la activación inicial es alta, la plataforma enfrenta dificultades para **convertirse en un hábito de uso después de las primeras dos semanas** sin estímulos adicionales.
+
+
 
 ## Autor
 Alejandra P
