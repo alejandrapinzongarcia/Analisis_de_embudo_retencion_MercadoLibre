@@ -214,7 +214,6 @@ Este proyecto demuestra habilidades clave de **Data Analytics**:
 * interpretación de métricas de producto
 * comunicación de insights de negocio
 
----
 ## Conversion Funnel
 
 ```mermaid
@@ -226,19 +225,11 @@ C --> D[Begin Checkout]
 D --> E[Add Shipping Info]
 E --> F[Add Payment Info]
 F --> G[Purchase]
+```
 
-```markdown
-## Key Analytical Techniques
+## Autor
+Alejandra P
 
-- Funnel analysis
-- Conversion rate calculation
-- Cohort retention analysis
-- Behavioral event tracking
-- SQL Common Table Expressions (CTEs)
-
-
-# 👤 Autor
-Alejandra Pinzón García
 Proyecto desarrollado como parte de formación en **Data Analytics**.
 
 Si te interesa discutir el análisis o colaborar en proyectos similares, puedes contactarme a través de GitHub o LinkedIn.
