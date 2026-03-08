@@ -1,0 +1,19 @@
+-- =====================================================
+-- DATA EXPLORATION
+-- Understand event distribution and dataset structure
+-- =====================================================
+
+SELECT
+    event_name,
+    COUNT(*) AS total_events
+FROM mercadolibre_funnel
+GROUP BY event_name
+ORDER BY total_events DESC;
+
+
+SELECT
+    country,
+    COUNT(DISTINCT user_id) AS total_users
+FROM mercadolibre_funnel
+GROUP BY country
+ORDER BY total_users DESC;

@@ -1,0 +1,54 @@
+-- =====================================================
+-- COHORT RETENTION ANALYSIS
+-- Track user retention by signup cohort
+-- =====================================================
+
+WITH cohort AS (
+
+SELECT
+    user_id,
+    TO_CHAR(
+        DATE_TRUNC('month', MIN(signup_date)),
+        'YYYY-MM'
+    ) AS cohort
+
+FROM mercadolibre_retention
+GROUP BY user_id
+
+),
+
+activity AS (
+
+SELECT
+    r.user_id,
+    c.cohort,
+    r.day_after_signup,
+    r.active
+
+FROM mercadolibre_retention r
+LEFT JOIN cohort c
+ON r.user_id = c.user_id
+
+)
+
+SELECT
+
+    cohort,
+
+    ROUND(
+        100.0 * COUNT(DISTINCT CASE
+            WHEN day_after_signup >= 7 AND active = 1
+            THEN user_id END
+        ) / NULLIF(COUNT(DISTINCT user_id),0),
+    1) AS retention_d7,
+
+    ROUND(
+        100.0 * COUNT(DISTINCT CASE
+            WHEN day_after_signup >= 14 AND active = 1
+            THEN user_id END
+        ) / NULLIF(COUNT(DISTINCT user_id),0),
+    1) AS retention_d14
+
+FROM activity
+GROUP BY cohort
+ORDER BY cohort;
