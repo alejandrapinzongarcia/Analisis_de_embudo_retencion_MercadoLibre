@@ -214,6 +214,7 @@ Este proyecto demuestra habilidades clave de **Data Analytics**:
 * interpretación de métricas de producto
 * comunicación de insights de negocio
 
+
 ## Conversion Funnel
 
 ```mermaid
